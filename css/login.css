@@ -1,0 +1,195 @@
+/* ====================== LOGIN / REGISTER / FORGOT CSS ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(129, 196, 8, 0.1), rgba(255, 152, 0, 0.1)), 
+                url('../img/hero-img.jpg') center center / cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 40px 30px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(129, 196, 8, 0.2);
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--bs-primary);
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Form common */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--bs-primary);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(129, 196, 8, 0.15);
+}
+
+/* Input group với icon mắt */
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    padding-right: 50px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 14px;
+    font-size: 22px;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.toggle-password:hover {
+    color: var(--bs-primary);
+}
+
+/* Checkbox nhớ mật khẩu */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--bs-primary);
+}
+
+/* Nút submit */
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--bs-primary);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background: #6ab304;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(129, 196, 8, 0.3);
+}
+
+/* Link quên mật khẩu & đăng ký */
+.forgot-link {
+    font-size: 13px;
+    color: var(--bs-primary);
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.links {
+    margin-top: 20px;
+    font-size: 14.5px;
+    color: #64748b;
+}
+
+.links a {
+    color: var(--bs-primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Trang Quên mật khẩu */
+.card h4 {
+    font-size: 22px;
+    margin: 10px 0 8px;
+    color: #1f2937;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .card {
+        padding: 30px 20px;
+    }
+    
+    .logo {
+        font-size: 32px;
+    }
+}
+
+/* Định nghĩa màu chính (nếu chưa có ở file khác) */
+:root {
+    --bs-primary: #81c408;
+    --bs-secondary: #ffb52a;
+    --bs-white: #ffffff;
+    --bs-light: #f8f9fa;
+    --bs-dark: #343a40;
+}
